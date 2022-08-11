@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+* { /*사방에 빈 여백 채우기*/
+	margin: 0;
+	padding: 0;
+}
+
+ul {	/*리스트 쩜 빼기*/
+	list-style: none;	
+}
+
+a, a:link {	/*텍스트 밑줄은 a태그로 뺌*/
+	text-decoration: none;
+	color: inherit;
+}
+
+header {
+	border-top: 2px solid black;
+	background: beige;
+	overflow: hidden; /*넘치면 숨겨줘*/
+	height: 150px;
+	
+}
+
+.wrap {
+	max-width: 1050px;
+	margin: 0 auto; /*가로 가운데*/
+	padding: 1rem 0;
+	display: flex;					/*가로로 나열*/
+	justify-content: space-between;	/*양끝으로 보내기*/
+}
+
+/*
+.site-nav {
+	margin-left: auto;
+}
+*/
+.nav-top {
+	margin: 1rem 0;	/*위 아래 여백을 주ㅓ*/
+}
+.nav-top, .nav-bottom {
+	display: flex;
+}
+
+.nav-top a {
+	text-transform: capitalize;
+}
+
+.nav-top a:hover {
+	text-decoration: underline;
+}
+
+.nav-top li::after {
+	content: '';
+	display: inline-block;	/*block은 줄바꿈 됨, 옆에 생기게 inline-block으로 처리*/
+	width: 1px;
+	height: 50%;	/*li아이템의 50%*/
+	background: #ccc;
+	margin: 0 0.925rem;
+}
+
+.nav-top li:nth-child(4)::after {
+	width: 0;
+}
+
+.nav-top li:nth-child(5)::after {
+	width: 0;
+}
+
+
+.nav-bottom li:hover {
+	background: #3a3a3a;
+	color: yellowgreen;
+	text-decoration: underline;
+	height: 50px;	
+}
+
+.nav-bottom a {
+	text-transform: uppercase;
+	padding: .5rem 1rem;
+	margin: .2rem 0 0 0; /*위쪽만마진줘*/
+	display: block; /*마진 안들어가서...*/
+}
