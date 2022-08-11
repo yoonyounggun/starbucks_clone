@@ -81,3 +81,110 @@ header {
 	margin: .2rem 0 0 0; /*위쪽만마진줘*/
 	display: block; /*마진 안들어가서...*/
 }
+
+.post-it {
+	position: fixed;
+	width: 140px;
+	height: 214px;
+	top: 200px;
+	right: 5%;
+}
+
+.promotion {
+	position: relative;
+}
+
+.beverage {
+	display: flex;
+	height: 650px;	
+	justify-content: center; /*수평의 가운데*/
+	column-gap: 2rem;
+}
+
+.b1 {
+	align-self: center;
+}
+.more {
+	border: 1px solid white;
+	border-radius: 3px;
+	color: white;
+	width: 40%;
+	margin: 2rem auto;
+	text-align: center;
+	padding: .5rem;
+	font-size: .725rem;
+}
+.more:hover {
+	background: white;
+	color: yellowgreen;
+	text-decoration: underline;
+	transition: all .3s ease-in-out;
+}
+.b2 {
+	margin-top: 3rem;
+}
+.b3 {
+	align-self: center;
+}
+.b4 {
+	padding-top: 3rem;
+}
+.promo-bg {
+	display: flex;
+	height: 700px;
+	position: absolute;
+	top:0;
+	z-index: -1;
+	width: 100%;
+}
+
+
+.left-bg {
+	background: yellowgreen;
+	flex: 5.5;
+}
+
+.right-bg {
+	background: skyblue;
+	flex: 4.5;
+}
+
+.notice {
+	display: flex;
+	height: 50px;
+	overflow: hidden;
+}
+.news-area {
+	flex: 5.5;
+	background: #000;
+	color: white;
+}
+.area-items {
+	display: flex;
+	float: right;
+}
+.area-items h2 {
+	font-size: 1rem;
+}
+.area-items ul {
+	overflow: hidden;
+}
+.area-items ul li {
+	margin: 30px 0;
+}
+.area-items button {
+	width: 30px;
+	height: 30px;
+	background: none;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	color: #ccc;
+}
+.promo-area {
+	flex: 4.5;
+	background: #f1f1f1;
+}
+.area-items2 {
+	display: flex;
+	float: left;
+}
