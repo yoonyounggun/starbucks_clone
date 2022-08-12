@@ -66,6 +66,20 @@ header {
 .nav-top li:nth-child(5)::after {
 	width: 0;
 }
+/* 검색창, 검색버튼*/
+.nav-top li:nth-last-child(1) {
+	position: relative;
+}
+[type=search] {
+	width: 30px;
+	height: 30px;
+	
+}
+[type=image] {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
 
 
 .nav-bottom li:hover {
